@@ -17,9 +17,7 @@ int strtoint(const char* str) {
         count2++;  // Storing how many steps were walken to reset *str later.
     }
     // Resetting *str.
-    for (int i = 0; i < count2; i++) {
-        str--;
-    }
+    str -= count2;
     // Depending on the position of the digit (the very first one has the more
     // 10s)
     while (*str) {
